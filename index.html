@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<style>
+
+  ul {
+    counter-reset: list;
+    font-family: Arial, sans-serif;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  li:before {
+    counter-increment: list;
+    content: counter(list);
+    color: white;
+    background: #607D8B;
+    display: inline-block;
+    text-align: center;
+    margin: 5px 10px;
+    line-height: 40px;
+    width: 40px;
+  }
+
+</style>
+<ul id="list"></ul>
+<script src="main.js" type="application/javascript" class=""></script>
+</body>
+</html>
